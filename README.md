@@ -1,16 +1,106 @@
-# React + Vite
+# AI Resume Enhancer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application that analyzes resumes and provides suggestions to improve clarity, professionalism, and ATS (Applicant Tracking System) compatibility.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+AI Resume Enhancer helps job seekers strengthen their resumes by leveraging AI to identify weak sections, improve wording, and generate actionable recommendations. The application aims to increase resume quality and improve chances of passing automated resume screening systems.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Resume Analysis
 
-## Expanding the ESLint configuration
+* Upload or paste resume content
+* Analyze resume structure and formatting
+* Identify missing or weak sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### AI-Powered Suggestions
+
+* Improve professional wording
+* Enhance achievement descriptions
+* Suggest stronger action verbs
+* Optimize content for ATS screening
+
+### Skill Enhancement
+
+* Detect technical and soft skills
+* Recommend relevant skills based on target roles
+* Highlight skill gaps
+
+### User-Friendly Interface
+
+* Clean and responsive design
+* Instant feedback and recommendations
+* Easy-to-read analysis results
+
+## Tech Stack
+
+### Frontend
+* React
+  
+
+### Backend
+
+* Node.js
+* Express.js
+
+### AI Integration
+
+* OpenAI API
+
+### Deployment
+
+* Vercel
+* Render
+
+## How It Works
+
+1. User uploads or pastes resume content.
+2. Resume data is sent to the backend.
+3. AI analyzes the resume.
+4. Suggestions and improvements are generated.
+5. Results are displayed in an organized format.
+6. User can update and refine the resume based on recommendations.
+
+## Architecture
+
+```text
+Frontend (Next.js)
+        │
+        ▼
+Backend (Express.js)
+        │
+        ▼
+    Gemini API
+        │
+        ▼
+Generated Resume Feedback
+```
+
+## Future Improvements
+
+* PDF and DOCX resume uploads
+* Resume scoring system
+* Role-specific resume optimization
+* Cover letter generation
+* Keyword matching against job descriptions
+* Download enhanced resume
+
+## Installation
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+npm install
+node index.js
+```
+
+
+Built to help job seekers improve resume quality using AI-powered analysis and recommendations.
